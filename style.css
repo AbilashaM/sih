@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 750px;
+    background: linear-gradient(to right, #2991CB,#D1F6F6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    position: relative;
+    
+}
+header {
+    background-color: #D9D9D94D;
+    width:1492px;
+    height:111px;
+    top: 10px;
+    left : 10px;
+    border-radius: 15px;
+    mix-blend-mode: color-dodge;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    position: relative;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+    
+  
+}
+.container-1 h2{
+    width: 423px;
+    height: 76px;
+    background-color: #0A231A;
+    text-align: center;
+    top:16px;
+    left: 604px;
+    opacity:90%;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 90px;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container-button {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.user-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sign-out-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    margin-left: 50px;
+    border-radius: 25px;
+}
+.search-bar {
+    width: 40%;
+    padding: 8px;
+}
+.rows-per-page {
+    width: 20%;
+    padding: 8px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+   
+}
+table, th, td {
+    border: 1px solid #ddd;
+   
+}
+th, td {
+    padding: 10px;
+    
+    text-align: left;
+}
+
+.add-user-button, .overthrow-user-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    margin-left: 50px;
+    border-radius: 25px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Style for the pop-up dialog */
+.popup-dialog {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.dialog-box {
+    background: linear-gradient(to right, #0887CD,#008080);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+/* Style for the input fields within the dialog */
+.dialog-input {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+/* Style for the save button */
+.dialog-save-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius: 25px;
+}
