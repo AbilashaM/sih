@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div class="container-1">
+            <div>
+                <p>License Management</p>
+            
+            <button id="sign-out-button">Sign Out</button>
+        </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="user-controls">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <select class="rows-per-page" name="rows-per-page">
+                <option value="5">5 Rows</option>
+                <option value="10">10 Rows</option>
+                <option value="20">20 Rows</option>
+            </select>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>License_ID</th>
+                    <th>Type</th>
+                    <th>Expiration_Date</th>
+                    <th>Status</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <!-- User data will be dynamically populated here -->
+            </tbody>
+        </table>
+       
+    </div>
+   
+
+    
+
+    <script>
+        
+
+        function addUserToTable(License_ID,Type, Expiration_Date,Status ) {
+            const tableBody = document.querySelector("tbody");
+            const newRow = document.createElement("tr");
+            newRow.innerHTML = `
+                <td>${License_ID}</td>
+                <td>${Type}</td>
+                <td>${Expiration_Date}</td>
+                <td>${Status}</td>
+            `;
+
+            tableBody.appendChild(newRow); 
+         }
+         document.addEventListener("DOMContentLoaded", function () {
+            // Add some demo users to the table
+            addUserToTable("RA2211032010001","Base Firewall", "Sun 31 Dec 2023","Evaluating");
+            addUserToTable("RA2211032010002","Network Protection", "Sun 31 Dec 2023","Deactivated");
+            addUserToTable("RA2211032010003","Web Protection", "Sun 31 Dec 2023","Deactivated");
+            addUserToTable("RA2211032010004","Email Protection", "Sun 31 Dec 2023","Deactivated");
+        });
+    </script>
+</body>
+</html>
