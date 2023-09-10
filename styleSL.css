@@ -1,0 +1,151 @@
+/* CSS for Server Lookup Page */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    background: linear-gradient(to right, #2991CB,#c6f8f8);
+    width: 100px;
+  }
+  
+  .container {
+   width: 910px;
+    margin: 110 auto;
+  }
+  
+  .header {
+    background-color: #D1f6f6;
+    padding: 50px;
+    width: 164%;
+    border-radius: 15px;
+  }
+  
+  .profile {
+    float: left;
+  }
+  
+  .profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 1px;
+    margin-bottom: 2px;
+  }
+  
+  .profile span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #191717;
+  }
+  
+  .options {
+    float: right;
+    
+  }
+  
+  .options a {
+    display: inline-block;
+    margin-left: 30px;
+    color: #191717;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    margin-left: 50px;
+    border-radius: 25px;
+    
+  }
+  
+  .main {
+    padding: 50px;
+  }
+  
+  .search-bar {
+    margin-bottom: 10px;
+    width: 140%;
+    margin-left: 390px;
+  }
+  .search-bar {
+    margin: 111000 auto;
+    padding: 35px 10px;
+    display: flex;
+    justify-content: centre;
+  }
+  
+  .search-bar input {
+    width: 600px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-bar button {
+    height: 41.5px;
+    padding: 5px 10px;
+    background-color: #030303;
+    color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .server-list {
+    margin-bottom: 50px;
+  }
+  
+  .server-list table {
+    width: 150%;
+    border-collapse: collapse;
+    margin-left: 135px;
+  }
+  
+  .server-list th, .server-list td {
+    padding: 5px;
+    border: 1px solid #ffffff;
+  }
+  
+  .show-connections {
+    margin-bottom: 1000px;
+    text-align: center;
+
+  }
+
+  .next-page button{
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    margin-left: 647px;
+    border-radius: 25px;
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c6f8f8;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+  }
+  
+  .popup h2 {
+    margin-bottom: 10px;
+  }
+  
+  .popup p {
+    margin-bottom: 5px;
+  }
+  
+  .popup button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
