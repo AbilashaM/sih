@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmmco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/rome.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<body style="background-color: whitesmoke;">
+    <div class="sidebar open">
+        <div class="logo-details">
+          <i class='bx bxs-network-chart icon'></i>
+         
+            <div class="logo_name">CyberWard</div>
+         
+        </div>
+        <ul class="nav-list">
+          <li>
+              <i class='bx bx-search' ></i>
+             <input type="text" placeholder="Search...">
+             <span class="tooltip">Search</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">Dashboard</span>
+            </a>
+             <span class="tooltip">Dashboard</span>
+          </li>
+          <li>
+           <a href="#">
+             <i class='bx bxs-user-detail' ></i>
+             <span class="links_name">User Control</span>
+           </a>
+           <span class="tooltip">User Control</span>
+         </li>
+         <li>
+           <a href="#">
+            <i class='bx bx-server' ></i>
+             <span class="links_name">Server Lookup</span>
+           </a>
+           <span class="tooltip">Server Lookup</span>
+         </li>
+         <li>
+           <a href="#">
+            <i class='bx bx-table' ></i>
+            
+             <span class="links_name">Rule Base</span>
+           </a>
+           <span class="tooltip"> Rule Base</span>
+         </li>
+         <li>
+           <a href="#">
+            <i class='bx bx-credit-card-front' ></i>
+             <span class="links_name">License Management</span>
+           </a>
+           <span class="tooltip">License Management</span>
+         </li>
+         <li>
+           <a href="#">
+            <i class='bx bx-sitemap'></i>
+             <span class="links_name">Load Balancer</span>
+           </a>
+           <span class="tooltip">Load Balancer</span>
+         </li>
+         <li>
+           <a href="#">
+            <i class='bx bx-history' ></i>
+             <span class="links_name">User History</span>
+           </a>
+           <span class="tooltip">User History</span>
+         </li>
+         <li>
+           <a href="#">
+            <i class='bx bx-log-out' id="log_out" ></i>
+             <span class="links_name">Log Out</span>
+           </a>
+           <span class="tooltip">Log Out</span>
+         </li>
+         
+        </ul>
+        
+      </div>
+    <div class="top-bar">
+        <div class="top-bar-item">
+            <ul>
+                <li><i class="fa-sharp fa-regular fa-bell" style="font-size: 22px;
+                    margin-top: 20px;
+                    padding-right: 17px; color: #000000;"></i></li>
+                <li><img src="profile.png" style="width: 46px;"></li>
+            </ul>
+        </div>
+        <div class="dropdown-mt-3" style="margin-top: 5%;">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown"
+                aria-expanded="false" style="color: black;
+                background-color: white;
+                border: none;
+                font-size: 16px;
+                margin-top: -83%;">
+                Zendaya
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+                <li><a class="dropdown-item" href="#" style="font-size: 20px;">Zendaya Holand</a></li>
+                <li><a class="dropdown-item" href="#" style="font-size: 18px;">Zendaya@gmmco.com</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-user-circle"
+                            style="font-size:24px; padding-right: 15px;"></i>Profile</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"
+                            style="color: rgb(0, 157, 255);padding-right: 2px; font-size: 24px; padding-right: 15px;"></i>Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-top-left">
+            <a style="padding-left: 15px;">Welcome back ,Admin!</a>
+        </div>
+        <div class="content-top-right" style="margin-right: -17%;">
+            <a>Dashboard/Home</a>
+        </div>
+    </div>
+    <div class="map-menu">
+        <div class="dropdown" style="padding-left: 15px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false" style="color: black;
+                background-color: whitesmoke;">
+                <a style="padding-right: 90px;">7 days</a>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="padding-right: 50px;">
+                <li><a class="dropdown-item" href="#">7 days</a></li>
+                <li><a class="dropdown-item" href="#">30 days</a></li>
+                <li><a class="dropdown-item" href="#">90 days</a></li>
+                <li><a class="dropdown-item" href="#">custom range</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="container" style="background-color: whitesmoke !important;">
+        <div class="row align-items-start" style="padding-left: 3%;margin-right: -10%;">
+            <div class="col-4 col-md-4 col-lg-4" style="padding-left: 3%;">
+                <div class="graph1">
+                    <div class="graph1-head">
+                        <div class="graph1-head-left" style="width: 110%; padding-top: 14px;">
+                            <a style="font-weight: 500;">Total no of Connections</a>
+                        </div>
+                        <div class="graph1-head-right">
+                            <a class="dropdown-item" href="#" style="font-size: 25px; font-weight: 700;"> 22,000</a>
+                        </div>
+                    </div>
+                    <div class="graph1-head2">
+                        <a style="font-size: 13px;">Device status</a>
+                    </div>
+                    <div class="graph1-graph">
+                        <canvas id="myChart" style="width:345px !important"></canvas>
+                        <script>
+                            const xValues = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                            const yValues = [7500, 3000, 2500, 5000, 5500, 6000, 7500];
+
+                            new Chart("myChart", {
+                                type: "line",
+                                data: {
+                                    labels: xValues,
+                                    datasets: [{
+                                        fill: false,
+                                        lineTension: 0,
+                                        backgroundColor: "white",
+                                        borderColor: "#2991CB",
+                                        data: yValues
+                                    }]
+                                },
+                                options: {
+                                    legend: { display: false },
+                                    scales: {
+                                        xAxes: [{
+                                            gridLines: {
+                                                display: false
+                                            }
+                                        }],
+                                        yAxes: [{
+                                            gridLines: {
+                                                display: false
+                                            }
+                                        }]
+                                    }
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-4 col-lg-4">
+                <div class="graph2">
+                    <div class="graph2-head">
+                        <div class="graph2-head-left" style="padding-top: 10px;
+                        font-weight: 500;">
+                            <a style="padding-right: 74px;">Total no of Users</a>
+                        </div>
+                        <div class="graph2-head-right">
+                            <a class="dropdown-item" href="#" style="font-size: 24px; font-weight: 700;">4012</a>
+                        </div>
+                    </div>
+                    <div class="graph2-head2">
+                        <a>Device status</a>
+                    </div>
+                    <div class="graph2-graph">
+                        <canvas id="myChart1" style="width:345px !important"></canvas>
+                        <script>
+                            const xValues1 = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                            const yValues1 = [1200, 1700, 1100, 200, 1800, 2800, 3000];
+
+                            new Chart("myChart1", {
+                                type: "line",
+                                data: {
+                                    labels: xValues1,
+                                    datasets: [{
+                                        fill: false,
+                                        lineTension: 0,
+                                        backgroundColor: "white",
+                                        borderColor: "#2991CB",
+                                        data: yValues1
+                                    }]
+                                },
+                                options: {
+                                    legend: { display: false },
+                                    scales: {
+                                        xAxes: [{
+                                            gridLines: {
+                                                display: false
+                                            }
+                                        }],
+                                        yAxes: [{
+                                            gridLines: {
+                                                display: false
+                                            }
+                                        }]
+                                    }
+                                }
+                            });
+                        </script>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-4 col-md-4 col-lg-4">
+                <!-- <div class="row justify-content-center"> -->
+                    <!-- <div class="col-md-10 text-center"> -->
+                        <!-- <h2 class="mb-5 text-center">Calendar #6 (Inline)</h2> -->
+                        <!-- <form action="#" class="row"> -->
+                            <!-- <div class="col-md-12"> -->
+                                <!-- <div id="inline_cal"> -->
+                                    
+                                <!-- </div> -->
+                            <!-- </div> -->
+                        <!-- </form> -->
+                        
+                    <!-- </div> -->
+                <!-- </div> -->
+
+                <div class="col-4 col-md-4 col-lg-4">
+                    <div class="graph3" style="width: 400px; margin: 20px;">
+                        <div class="graph3-head">
+                            <div class="graph3-head-left" style="padding-right: 44px; padding-top: 11px;">
+                                <h5 style="font-weight: 500;">Recent Changes</h5>
+                              
+                            </div>
+                            <div class="graph3-head-right">
+                                <a class="dropdown-item" href="#" style="font-size: 23px; font-weight: 700;">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                        <div class="graph3-graph" style="display: flex; flex-direction: column;"> <!-- Add Flexbox styles -->
+                            <div class="column">
+                                <div class="card4" style="width:350px; padding: 5px;margin: 10px;">
+                                    <a style="padding-left: 12px;">User Interacted</a>
+                                    <p style="padding-left: 12px;color: black;font-size: 14px;
+                                    font-weight: 400;">Lorem ipsum, dolor sit amet consectetur </p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card5" style="width:350px; padding: 5px;margin: 10px;">
+                                    <a style="padding-left: 12px;">Existing Customers</a>
+                                    <p style="padding-left: 12px;color: black;font-size: 14px;
+                                    font-weight: 400;">Lorem ipsum, dolor sit amet consectetur </p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-4 col-md-4 col-lg-4" style="padding-left: 37px;
+            padding-top: 20px;">
+                <div class="graph3">
+                    <div class="graph3-head">
+                        <div class="graph3-head-left" style="padding-right: 44px;
+                        padding-top: 11px;">
+                            <a style="font-weight: 500;">Total no of Server</a>
+                        </div>
+                        <div class="graph3-head-right">
+                            <a class="dropdown-item" href="#" style="font-size: 23px; font-weight: 700;">10,605</a>
+                        </div>
+                    </div>
+                    <div class="graph3-head2">
+                        <a>Device status</a>
+                    </div>
+                    <div class="graph3-graph">
+                        <canvas id="myChart2" style="width:345px !important"></canvas>
+                        <script>
+                            const xValues2 = ["Locked", "Inactive", "Active"];
+                            const yValues2 = [1800, 5000, 9000];
+
+                            new Chart("myChart2", {
+                                type: "line",
+                                data: {
+                                    labels: xValues2,
+                                    datasets: [{
+                                        fill: false,
+                                        lineTension: 0,
+                                        backgroundColor: "white",
+                                        borderColor: "#2991CB" ,
+                                        data: yValues2
+                                    }]
+                                },
+                                options: {
+                                    legend: { display: false },
+                                    scales: {
+                                        xAxes: [{
+                                            gridLines: {
+                                                display: false
+                                            }
+                                        }],
+                                        yAxes: [{
+                                            gridLines: {
+                                                display: false
+                                            }
+                                        }]
+                                    }
+                                }
+                            });
+                        </script>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-4 col-md-4 col-lg-4">
+                <div class="map">
+                    <div class="map-heading">
+                        <a style="font-weight: 500;">User History</a>
+                    </div>
+                    <div class="map-image">
+                        <div class="card table-card" style="margin: 5px;">
+                            <table>
+                                <thead style="background-color: #2991CB;   color: white">
+                                    <tr>
+                                        <th>User Type</th>
+                                        <th>No of User</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Add table rows with user history data here -->
+                                    <tr style="background-color:#D1F6F6;">
+                                        <td>User 1</td>
+                                        <td>History 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>User 2</td>
+                                        <td>History 2</td>
+                                    </tr>
+                                    <tr style="background-color:#D1F6F6;">
+                                        <td>User 1</td>
+                                        <td>History 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>User 2</td>
+                                        <td>History 2</td>
+                                    </tr>
+                                    <tr style="background-color:#D1F6F6;">
+                                        <td>User 1</td>
+                                        <td>History 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>User 2</td>
+                                        <td>History 2</td>
+                                    </tr>
+                                    <tr style="background-color:#D1F6F6;">
+                                        <td>User 1</td>
+                                        <td>History 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>User 2</td>
+                                        <td>History 2</td>
+                                    </tr>
+                                    <tr style="background-color:#D1F6F6;">
+                                        <td>User 2</td>
+                                        <td>History 2</td>
+                                    </tr>
+                                    <!-- Add more rows as needed -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="map-bottom">
+                        <div class="bottom-left">
+                            <a style="padding-right: 189px;">Total</a>
+                        </div>
+                        <div class="bottom-right">
+                            <a>26,437</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-4 col-lg-4" style="padding-bottom: 103px">
+                <div class="lastcol">
+                    <div class="last">
+                        <a style="font-weight: 500;">Friday,03 September</a>
+                    </div>
+                    <div class="lastbody">
+                        <div class="row">
+                            <div class="column">
+                                <div class="card5">
+                                    <a style="padding-left: 12px;">User Interacted</a>
+                                    <p style="padding-left: 12px;color: black;font-size: 14px;
+                                    font-weight: 400;">132</p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card4">
+                                    <a style="padding-left: 12px;">Existing Customers</a>
+                                    <p style="padding-left: 12px;color: black;font-size: 14px;
+                                    font-weight: 400;">32</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+                                <div class="card5">
+                                    <a style="padding-left: 12px;">New Customers</a>
+                                    <p style="padding-left: 12px;color: black;font-size: 14px;
+                                    font-weight: 400;">67</p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card4">
+                                    <a style="padding-left: 12px;">Gmmco Operator</a>
+                                    <p style="padding-left: 12px;color: black;font-size: 14px;
+                                    font-weight: 400;">33</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <div class="card5">
+                                    <a style="padding-left: 12px;">Enquiries</a>
+                                    <p style="padding-left: 12px;color: black;font-size: 14px;
+                                    font-weight: 400;">76</p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card4">
+                                    <a style="padding-left: 12px;">Quotation</a>
+                                    <p style="padding-left: 12px;color: black;font-size: 14px;
+                                    font-weight: 400;">25</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <script src="sample.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/rome.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
